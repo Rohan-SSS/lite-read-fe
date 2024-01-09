@@ -1,0 +1,10 @@
+.read {
+  display: flex;
+  flex-direction: row;
+}
+.navigator {
+  flex: 1;
+}
+.text {
+  flex: 3;
+}
