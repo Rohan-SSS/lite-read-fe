@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigator, Text } from "../../Components";
+import { Foo, Navigator, Text } from "../../Components";
 import "./Read.css";
 
 const Read = () => {
@@ -10,6 +10,9 @@ const Read = () => {
       </div>
       <div className="text">
         <Text />
+      </div>
+      <div className="foo">
+        <Foo />
       </div>
     </div>
   );

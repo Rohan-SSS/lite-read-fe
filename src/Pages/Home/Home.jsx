@@ -34,7 +34,7 @@ const HomePage = () => {
               title={data.title}
               imageUrl={data.imageURL}
               alt={data.alt}
-              malLink={data.malLink}
+              novelData={data}
             />
           ))}
         </div>

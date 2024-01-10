@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import slugify from "slugify";
 
 export default function ImgMediaCard(props) {
-  const cardLink = `/${slugify(props.title).toLowerCase()}`;
-
+  const cardLink = `/${slugify(props.title, {
+    remove: /[*+~.()'"!:@]/g,
+  }).toLowerCase()}`;
   return (
     <Card
       className="card"
@@ -22,7 +23,10 @@ export default function ImgMediaCard(props) {
         },
       }}
       component={Link}
-      to={cardLink}
+      to={{
+        pathname: cardLink,
+        state: { novel: props.novelData },
+      }}
       style={{ textDecoration: "none" }}
     >
       <CardMedia
