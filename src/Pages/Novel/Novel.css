@@ -1,0 +1,110 @@
+.foo-novel {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.novel {
+  display: flex;
+  flex-direction: row;
+  background-color: #2b2b2b;
+  border: 1px solid #555;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.data {
+  flex: 3;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.title {
+  margin-bottom: 10px;
+  color: var(--color-title);
+  letter-spacing: 0.2rem;
+  background: var(--gradient-box);
+  border-radius: 2px;
+}
+.title h2 {
+  margin-left: 2vh;
+  padding: 4px;
+}
+
+.img-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.img {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.mal {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+.img img {
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+strong {
+  font-size: 0.8em;
+  margin-right: 8px;
+  letter-spacing: 0.2rem;
+}
+
+.genre {
+  color: #ddd;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+}
+
+.genre p {
+  font-size: 0.6em;
+}
+
+.synopsis {
+  color: #ddd;
+  letter-spacing: 2px;
+}
+
+.synopsis p {
+  font-size: 0.6em;
+}
+
+.volumes {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #444;
+  border-left: 1px solid #555;
+}
+.volumes-heading {
+  background: var(--gradient-boxrev);
+  color: var(--color-title);
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .novel {
+    flex-direction: column;
+  }
+
+  .volumes {
+    border-left: none;
+    border-top: 1px solid #555;
+    margin-top: 20px;
+  }
+}
