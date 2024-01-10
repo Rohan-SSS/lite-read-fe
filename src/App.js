@@ -6,6 +6,7 @@ import {
   Browse,
   Genre,
   Home,
+  Novel,
   Read
 } from "./Pages";
 
@@ -20,7 +21,8 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/genre" element={<Genre />} />
           <Route path="/browse" element={<Browse />} />
-          <Route path="/:title" element={<Read />} />
+          <Route path="/:title" element={<Novel />} />
+          <Route path="/:title/:volume" element={<Read />} />
         </Routes>
       </div>
     </div>

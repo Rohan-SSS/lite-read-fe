@@ -9,8 +9,6 @@ body {
   background: var(--gradient-bg);
 }
 
-.navbar {
-}
 .main {
   margin: 2vh;
 }

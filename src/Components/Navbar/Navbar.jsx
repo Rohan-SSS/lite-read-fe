@@ -17,7 +17,6 @@ import {
 } from "@mui/material/styles";
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
 
 const pages = [
   { label: "Home", path: "/" },
@@ -114,7 +113,7 @@ function Navbar() {
                     fontFamily: "manrope",
                     letterSpacing: ".2rem",
                     marginRight: "16px",
-                    "&:hover": { backgroundColor: "#161616" },
+                    "&:hover": { backgroundColor: "#212121" },
                   }}
                 >
                   {page.label}
