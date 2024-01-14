@@ -11,7 +11,7 @@ const Novel = () => {
   useEffect(() => {
     const fetchNovels = async () => {
       try {
-        const response = await fetch(`http://127.0.0.1:8000/novel/${title}`);
+        const response = await fetch(`http://127.0.0.1:8000/${title}`);
         if (!response.ok) {
           throw new Error("Error 404");
         }

@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Routes } from "react-router-dom";
 import './App.css';
 import { Navbar } from './Components';
+import { StoryProvider } from './Components/StoryProvider';
 import {
   Browse,
   Genre,
@@ -17,13 +18,15 @@ const App = () => {
         <Navbar />
       </div>
       <div className='main'>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/genre" element={<Genre />} />
-          <Route path="/browse" element={<Browse />} />
-          <Route path="/:title" element={<Novel />} />
-          <Route path="/:title/:volume" element={<Read />} />
-        </Routes>
+        <StoryProvider>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/genre" element={<Genre />} />
+            <Route path="/browse" element={<Browse />} />
+            <Route path="/:title" element={<Novel />} />
+            <Route path="/:title/:volume" element={<Read />} />
+          </Routes>
+        </StoryProvider>
       </div>
     </div>
   )
