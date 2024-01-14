@@ -5,11 +5,9 @@
 
 .navigator {
   flex: 2;
-  background-color: aquamarine;
 }
 .text {
   flex: 5;
-  background-color: bisque;
   margin-left: 6px;
   margin-right: 6px;
   overflow-y: auto;
@@ -17,5 +15,4 @@
 }
 .foo {
   flex: 2;
-  background-color: cadetblue;
 }
