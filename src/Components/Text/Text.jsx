@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import { StoryContext } from "../StoryProvider";
 
 const Text = () => {
-  return <div>{"Text\n".repeat(1000)}</div>;
+  const storyFromContext = useContext(StoryContext).story;
+
+  return (
+    <div
+      className="text-container"
+      dangerouslySetInnerHTML={{ __html: storyFromContext }}
+    />
+  );
 };
 
 export default Text;

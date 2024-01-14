@@ -1,0 +1,29 @@
+.navigator {
+  margin: 2%;
+  background-color: #2b2b2b;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+.navigator-title {
+  background: var(--gradient-boxrev);
+  color: var(--color-title);
+  border-radius: 2px;
+}
+
+.chapter-section,
+.page-section {
+  margin-bottom: 20px;
+}
+
+.chapter-section h6,
+.page-section h6 {
+  margin-bottom: 10px;
+}
+
+.chapter-section button,
+.page-section button {
+  text-transform: none;
+  padding: 10px 10px;
+}
